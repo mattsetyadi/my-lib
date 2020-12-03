@@ -6,7 +6,8 @@ const express = require('express');
 const app = express();
 const expressLayouts = require('express-ejs-layouts');
 
-const indexRouter = require('./routes/index.js');
+const indexRouter = require('./routes/index');
+const authorRouter = require('./routes/authors');
 
 app.set('view engine', 'ejs');
 app.set('views', __dirname + '/views');
@@ -25,5 +26,9 @@ db.on('error', (error) => console.error(error));
 db.once('open', () => console.log('Connected to Mongose'));
 
 app.use('/', indexRouter);
+app.use('/authors', authorRouter);
 
 app.listen(process.env.PORT || 3000);
+
+// mongoDb password YVbRFb5O8SNhyJ7M
+// mongo connect heroku key: DATABASE_URL valu: mongodb+srv://mattsetyadi:YVbRFb5O8SNhyJ7M@cluster0.w3wf9.mongodb.net/test?retryWrites=true&w=majority

@@ -18,7 +18,7 @@
 
 body {
   /* background: linear-gradient(to right, var(--color-background-dark), var(--color-background-light)); */
-  background: #222222;
+  background: #1d1515;
 }
 
 .container {
@@ -40,4 +40,10 @@ body {
 
 .error-message {
   color: hsl(var(--color-danger-hue), 100%, 50%);
+}
+
+@media screen and (max-width: 790px) {
+  .page-header {
+    font-size: 1.2rem;
+  }
 }

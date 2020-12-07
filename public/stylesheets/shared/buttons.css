@@ -53,3 +53,20 @@
   color: var(--color-btn-danger-text-dark);
   background-color: var(--color-btn-danger-background-dark);
 }
+
+@media screen and (max-width: 768px){
+  .btn {
+    padding: 6px 15px;
+    font-size: 16px;
+  }
+
+  .btn-row > * {  
+    margin: 0;
+    margin-bottom: 8px;
+  }
+
+  .btn-row {
+    margin: 0;
+    align-items: inherit;
+  }
+}

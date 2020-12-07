@@ -41,3 +41,43 @@
 .header-nav li a:hover, .header-title:hover {
   color: white;
 }
+
+@media screen and (max-width: 790px ) {
+  /* .header-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 15px;
+    white-space: nowrap;
+    padding: 0px;
+  } */
+
+  .header-nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 15px;
+    white-space: nowrap;
+    padding: 0px;
+  }
+
+  .header-title {
+    color: var(--color-text-light);
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-bottom: 14px;
+    margin-top: 12px;
+  }
+  .header-nav li a {
+    padding: 0.5rem;
+  }
+}

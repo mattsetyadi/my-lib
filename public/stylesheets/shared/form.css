@@ -78,3 +78,31 @@
   color: var(--color-text-light);
   font-size: inherit;
 }
+
+@media screen and (max-width: 845px) {
+  .form-item > select {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .form-row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .form-item {
+    margin-left: 0;
+    margin-bottom: 5px;
+  }
+
+
+  .form-item > label {
+    font-size: 16px;
+
+  }
+  .media-upload {
+    align-self: center;
+    margin-bottom: 10px;
+  }
+}

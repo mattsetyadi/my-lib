@@ -21,7 +21,7 @@
   text-align: center;
 }
 
-/* .btn-row {
+.btn-row {
   display: flex;
   align-items: flex-start;
 }
@@ -32,7 +32,7 @@
 
 .btn-row > *:first-child {
   margin-left: 0;
-} */
+}
 
 .btn-primary {
   color: var(--color-btn-primary-text);

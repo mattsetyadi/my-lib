@@ -109,4 +109,18 @@
     grid-area: delete;
     justify-self: stretch;
   }
+
+  .book-details-grid {
+    display: grid;
+    align-content: flex-start;
+    align-items: center;
+    grid-gap: 1rem;
+    grid-template-columns: auto;
+    white-space: pre-line;
+    margin-left: 5px;
+  }
+  .book-details {
+    display: flex;
+    flex-direction: column;
+}
 }

@@ -3,7 +3,7 @@
   <div>
     <img class="book-cover" src="<%= book.coverImagePath %>">
     <div class="book-details-btn-grid">
-      <a class="btn btn-primary" href="/books/<%= book.id %>/edit">Edit</a>
+      <a class="btn btn-primary book-details-edit-button" href="/books/<%= book.id %>/edit">Edit</a>
       <%- include('../partials/deleteForm', { url: `/books/${book.id}` }) %>
       <a class="btn btn-primary book-details-author-button" href="/authors/<%= book.author.id %>">View Author</a>
     </div>
@@ -16,6 +16,6 @@
     <div class="book-details-label">Page Count:</div>
     <div><%= book.pageCount %></div>
     <div class="book-details-label">Lyric:</div>
-    <div><%= book.description %></div>
+    <div class="desc__area"><%= book.description %></div>
   </div>
 </div>

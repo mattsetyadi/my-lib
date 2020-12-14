@@ -36,5 +36,3 @@ app.use('/books', bookRouter);
 
 app.listen(process.env.PORT || 3000);
 
-// mongoDb password YVbRFb5O8SNhyJ7M
-// mongo connect heroku key: DATABASE_URL valu: mongodb+srv://mattsetyadi:YVbRFb5O8SNhyJ7M@cluster0.w3wf9.mongodb.net/test?retryWrites=true&w=majority
